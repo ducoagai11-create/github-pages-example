@@ -1,0 +1,224 @@
+J
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>duca Hotel — Elegant & Cozy</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="brand">
+                <div class="logo">DH</div>
+                <div>
+                    <div style="font-weight:800">DUCO HOTEL</div>
+                    <div class="muted" style="font-size:13px">Boutique hotel · Ocean view</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#rooms">Rooms</a>
+                <a href="#amenities">Amenities</a>
+                <a href="#view">view</a>
+                <a href="#contact">Contact</a>
+                <a class="btn" href="#book">Book Now</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-card">
+                    <span class="kicker">New — Seaside Summer 2025</span>
+                    <h1>Wake up to ocean breezes and soft sunlight</h1>
+                    <p class="lead">Comfortable rooms, local cuisine, and friendly staff — perfect for couples,
+                        families, and solo travelers.</p>
+
+                    <div style="display:flex;gap:12px;margin-top:18px;align-items:center">
+                        <div style="display:flex;flex-direction:column">
+                            <strong>From</strong>
+                            <div class="price">$89 / night</div>
+                        </div>
+                        <div style="flex:1"></div>
+                        <div style="display:flex;gap:8px;align-items:center">
+                            <div style="text-align:right">
+                                <div class="muted">Rating</div>
+                                <div style="font-weight:800">4.8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top:18px" class="booking" id="book">
+                        <form
+                            onsubmit="event.preventDefault();alert('This is a demo booking box — integrate a backend to process bookings.');">
+                            <input type="text" placeholder="Your name" required>
+                            <input type="date" required>
+                            <select>
+                                <option>1 guest</option>
+                                <option>2 guests</option>
+                                <option>3 guests</option>
+                            </select>
+                            <button class="btn cta" type="submit">Check availability</button>
+                        </form>
+                    </div>
+
+                    <div style="margin-top:10px;font-size:13px;color:var(--muted)">Pro tip: replace the hero image URL
+                        with a photo from your hotel for best results.</div>
+                </div>
+
+                <div>
+                    <div class="hero-media"></div>
+                    <div style="display:flex;gap:12px;margin-top:12px">
+                        <div style="flex:1" class="card">
+                            <strong>Location</strong>
+                            <div class="muted" style="font-size:13px">10 min walk to the beach · 20 min from downtown
+                            </div>
+                        </div>
+                        <div style="flex:1" class="card">
+                            <strong>Free breakfast</strong>
+                            <div class="muted" style="font-size:13px">Local dishes served daily</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rooms -->
+            <section class="section" id="rooms">
+                <h2 style="margin-bottom:12px">Rooms & Suites</h2>
+                <div class="grid">
+                    <article class="card">
+                        <div class="room-img"
+                            style="background-image:url('https://media.istockphoto.com/id/963291428/photo/modern-bedroom-interior-design-3d-render.jpg?s=612x612&w=0&k=20&c=_G4sKetulfS7GPUgw05NgLCorQRo-Pr5ql47V9NFHxs=');">
+                        </div>
+                        <div class="room-title">
+                            <div><strong>Deluxe Ocean View</strong>
+                                <div class="muted" style="font-size:13px">King bed · Balcony</div>
+                            </div>
+                            <div class="price">$149</div>
+                        </div>
+                        <p class="muted" style="margin-top:8px">Spacious room with panoramic windows overlooking the
+                            sea.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="room-img"
+                            style="background-image:url('https://media.istockphoto.com/id/1150332061/photo/interior-design-in-bedroom-of-pool-villa-with-cozy-king-bed.jpg?s=612x612&w=0&k=20&c=wBomj_ixcINYm5IRfFsRFXYaKIsc3yedbemr-hNqqw4=');">
+                        </div>
+                        <div class="room-title">
+                            <div><strong>Cozy Garden Room</strong>
+                                <div class="muted" style="font-size:13px">Queen bed · Patio</div>
+                            </div>
+                            <div class="price">$99</div>
+                        </div>
+                        <p class="muted" style="margin-top:8px">Quiet ground-floor rooms next to our jasmine garden.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="room-img"
+                            style="background-image:url('https://media.istockphoto.com/id/2149673091/photo/bedroom-with-tropical-style-garden-view-king-bed-with-white-linens-and-pillows.jpg?s=612x612&w=is&k=20&c=7sz3OYUpM6bQWHQx4Mn3ZMk-ayDP4AKZjm95zJgmf8k=');">
+                        </div>
+                        <div class="room-title">
+                            <div><strong>Family Suite</strong>
+                                <div class="muted" style="font-size:13px">2 beds · Living area</div>
+                            </div>
+                            <div class="price">$199</div>
+                        </div>
+                        <p class="muted" style="margin-top:8px">Two-bedroom suite with connecting living space and
+                            kitchenette.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Amenities -->
+            <section class="section" id="amenities">
+                <h2 style="margin-bottom:12px">Amenities</h2>
+                <div class="amenity">
+                    <div class="amenity">
+                        <img src="https://images.unsplash.com/photo-1645725677294-ed0843b97d5c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJlZSUyMHdpZml8ZW58MHx8MHx8fDA%3D"
+                            alt="">
+                        <strong>free wifi</strong>
+                        <div class="muted" style="font-size:13px">Fast & reliable</div>
+                    </div>
+
+                    <div class="amenity">
+                        <img src="https://images.unsplash.com/photo-1572180465667-ba3585049240?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBvb2wlMjAlMjYlMjBzcGF8ZW58MHx8MHx8fDA%3D"
+                            alt="">
+                        <strong>Pool & Spa</strong>
+                        <div class="muted" style="font-size:13px">Relax & unwind</div>
+                    </div>
+
+                    <div class="amenity">
+                        <img src="https://images.unsplash.com/photo-1578161529242-11302046857f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMzfHx8ZW58MHx8fHx8"
+                            alt="">
+                        <strong>Restaurant</strong>
+                        <div class="muted" style="font-size:13px">Local & seasonal</div>
+                    </div>
+
+                    <div class="amenity">
+                        <img src="https://media.istockphoto.com/id/2179702899/photo/modern-conference-room-with-a-large-board-table-chairs-and-a-screen-on-the-wall-wooden.jpg?s=612x612&w=0&k=20&c=mCS0W-5e1xISXgASTbFQ2LjW397KqilKlBqFnRvXLC8="
+                            alt="">
+                        <strong>Meeting rooms</strong>
+                        <div class="muted" style="font-size:13px">Events & conferences</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery -->
+            <section class="section" id="view">
+                <h2 style="margin-bottom:12px">view</h2>
+                <div class="view">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWx8ZW58MHx8MHx8fDA%3D"
+                        alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1754951194385-afbc9148f613?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <img src="https://plus.unsplash.com/premium_photo-1687960116497-0dc41e1808a2?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGhvdGVsfGVufDB8fDB8fHww"
+                        alt="">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG91cmlzbXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="">
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="section" style="display:grid;grid-template-columns:1fr 360px;gap:18px;align-items:start">
+                <div>
+                    <h2 style="margin-bottom:12px">Guest reviews</h2>
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <strong>"Perfect weekend escape"</strong>
+                            <p class="muted">We loved the view and the breakfast. Staff were so welcoming — we'll be
+                                back!</p>
+                            <div class="muted" style="font-size:13px">— Anna, UK</div>
+                        </div>
+
+                        <div class="testimonial">
+                            <strong>"Family-friendly & clean"</strong>
+                            <p class="muted">Rooms were spacious and the kids loved the pool. Great location.</p>
+                            <div class="muted" style="font-size:13px">— Omar, QA</div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="card" id="contact">
+                    <h3 style="margin:0 0 8px 0">Contact & Quick info</h3>
+                    <div class="muted" style="font-size:13px;margin-bottom:12px">Have questions? Reach out or request a
+                        callback.</div>
+                    <form onsubmit="event.preventDefault();alert('Contact form (demo) — wire to backend.');">
+                        <input type="text" placeholder="Your name" required style="margin-bottom:8px">
+                        <input type="email" placeholder="Email" required style="margin-bottom:8px">
+                        <input type="tel" placeholder="Phone (optional)" style="margin-bottom:8px">
+                        <button class="btn" type="submit">Send message</button>
+                    </form>
+                </aside>
+            </section>
+        </main>
+
+        <footer>
+            <div>© <strong>duco hotel</strong> — All rights reserved</div>
+            <div class="muted">123 Ocean Road · Beach City · +2520907292855</div>
+        </footer>
+    </div>
+</body>
+
+</html>

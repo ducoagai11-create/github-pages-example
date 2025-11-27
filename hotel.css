@@ -1,0 +1,139 @@
+/* ---------------------------------------------
+   Seaside Haven — External CSS File
+   --------------------------------------------- */
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#0ea5a4;
+  --accent-2:#0f766e;
+  --glass: rgba(255,255,255,0.6);
+  --radius:16px;
+  --max-w:1200px;
+  --gap:24px;
+  --shadow: 0 8px 30px rgba(2,6,23,0.08);
+  color-scheme: light;
+}
+.amenity img{
+    width: 20%;
+    height: auto;
+    border-radius: 6px;
+}
+*amenity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.amenity h3{
+    margin: 8px 0 0 0;
+}
+.amenity p{
+    margin: 0;
+    color: #555;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#f6fbfb 0%,var(--bg) 100%);
+  color:#0f172a;
+  line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+  padding:32px 18px;
+  display:flex;
+  justify-content:center;
+}
+
+.wrap{width:100%;max-width:var(--max-w)}
+
+/* Header */
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{
+  width:56px;height:56px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex;align-items:center;justify-content:center;
+  color:white;font-weight:700;font-size:18px;box-shadow:var(--shadow)
+}
+
+nav{display:flex;gap:18px;align-items:center}
+nav a{color:var(--muted);text-decoration:none;font-weight:600}
+.btn{
+  background:var(--accent);color:#fff;
+  padding:10px 16px;border-radius:12px;text-decoration:none;
+  font-weight:700;box-shadow:0 6px 20px rgba(14,165,164,0.18)
+}
+
+/* Hero */
+.hero{
+  display:grid;grid-template-columns:1fr 420px;
+  gap:var(--gap);align-items:center;margin-bottom:30px
+}
+
+.hero-card{
+  background:var(--card);border-radius:20px;padding:28px;
+  box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px
+}
+
+.hero-media{
+  height:420px;border-radius:14px;overflow:hidden;
+  background-image:url('https://images.unsplash.com/photo-1501117716987-c8e4a7b3b8c2?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;background-position:center
+}
+
+.kicker{
+  display:inline-block;background:linear-gradient(90deg,rgba(14,165,164,0.12),rgba(15,118,110,0.06));
+  color:var(--accent-2);padding:6px 10px;border-radius:999px;
+  font-weight:700;font-size:13px
+}
+
+h1{margin:0;font-size:28px}
+p.lead{margin:0;color:var(--muted)}
+
+/* Booking */
+.booking{
+  background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.9));
+  padding:18px;border-radius:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,0.5)
+}
+
+.booking form{display:flex;gap:8px;flex-wrap:wrap}
+.booking input, .booking select{
+  flex:1;padding:10px;border-radius:10px;
+  border:1px solid #e6eef0;background:transparent
+}
+
+.booking .cta{min-width:130px}
+
+/* Sections */
+.section{margin-bottom:34px}
+
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:18px
+}
+
+.card{
+  background:var(--card);padding:18px;border-radius:14px;
+  box-shadow:var(--shadow)
+}
+
+.room-img{
+  height:160px;border-radius:10px;
+  background-size:cover;background-position:center;margin-bottom:12px
+}
+
+.room-title{
+  display:flex;justify-content:space-between;align-items:center
+}
+
+.price{font-weight:800;color:var(--accent-2)}
+.view{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:8px
+}
+
+.view img{
+  width:100%;height
